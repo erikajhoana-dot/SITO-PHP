@@ -5,4 +5,5 @@
     <a href="bucles.php">Bucles</a>
     <a href="arreglos.php">Arreglos</a>
     <a href="sesiones.php">Sesiones</a>
+    <a>Salir</a>
 </nav>
