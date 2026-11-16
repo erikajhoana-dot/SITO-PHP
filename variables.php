@@ -102,7 +102,7 @@
 
                         <ul>
                             <?php foreach ($dato["valor"] as $color) { ?>
-                                <li><?php echo $color;?></li>
+                                <?php echo $color;?>
                             <?php } ?>
                         </ul>
 
