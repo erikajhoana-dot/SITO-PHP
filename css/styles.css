@@ -4,19 +4,24 @@
 }
 
 body {
-    background-color: #0f1813;
+    background: linear-gradient(135deg, #0f1813, #19271e);
     margin: 0;
     font-family: 'Nunito', sans-serif;
     color: #ffffff;
+    min-height: 100vh;
+}
+
+img {
+    width: 300px;
+    height: 300px;
 }
 
 header {
     text-align: center;
-    padding: 45px 20px 25px;
+    padding: 50px 20px 25px;
 }
 
 header h1 {
-    font-family: 'Nunito', sans-serif;
     font-size: 48px;
     font-weight: 900;
     letter-spacing: 0.5px;
@@ -27,9 +32,8 @@ header h1 {
 header p {
     font-size: 19px;
     font-weight: 700;
-    text-align: center;
     color: #f1bbcb;
-    margin: 5px 0 0;
+    margin: 8px 0 0;
 }
 
 nav {
@@ -37,27 +41,30 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
-    padding: 20px;
+    gap: 12px;
+    padding: 18px 20px;
 }
 
 nav a {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 800;
     color: #ffffff;
     text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    color: #f1bbcb;
+    background-color: #f1bbcb;
+    color: #475438;
     transform: translateY(-3px);
 }
 
 main {
     max-width: 1100px;
     width: 90%;
-    margin: 30px auto;
+    margin: 35px auto;
     text-align: center;
 }
 
@@ -65,7 +72,7 @@ main h2 {
     font-size: 32px;
     font-weight: 900;
     color: #f1bbcb;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 main h3 {
@@ -75,63 +82,250 @@ main h3 {
     margin-top: 35px;
 }
 
-main p {
+main > p {
+    max-width: 850px;
+    margin: 0 auto;
     font-size: 16px;
     font-weight: 600;
-    color: #ffffff;
-    line-height: 1.7;
+    color: #e5e9e5;
+    line-height: 1.8;
 }
 
 .contenedor-tarjetas {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    padding: 30px 0;
-    text-align: left;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    padding: 35px 0;
+    align-items: stretch;
 }
 
 .tarjeta {
     background-color: #f1bbcb;
-    padding: 25px;
-    border-radius: 20px;
+    padding: 15px;
+    border: 1px solid #f8dce5;
+    border-radius: 22px;
     color: #475438;
     font-family: 'Nunito', sans-serif;
     text-align: center;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tarjeta:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 13px 28px rgba(0, 0, 0, 0.25);
 }
 
 .tarjeta h4 {
-    font-size: 21px;
+    font-size: 22px;
     font-weight: 900;
     color: #475438;
-    margin-top: 0;
+    margin: 0 0 15px;
+}
+
+.tarjeta h2 {
+    font-size: 35px;
+    font-weight: 900;
+    color: #475438;
+    margin: 12px 0;
 }
 
 .tarjeta p,
 .tarjeta li {
     font-size: 16px;
     font-weight: 700;
-    color: #221a17;
-    line-height: 1.7;
+    color: #302b29;
+    line-height: 1.8;
 }
 
 .tarjeta ul {
+    display: inline-block;
+    text-align: left;
     padding-left: 25px;
+}
+
+.tarjeta img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 12px;
+}
+
+.tarjeta table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    color: #302b29;
+    font-size: 14px;
+    background-color: #fff5f7;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tarjeta th,
+.tarjeta td {
+    padding: 11px 8px;
+    border: 1px solid #d9a9b7;
+    text-align: center;
+}
+
+.tarjeta th {
+    background-color: #475438;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+form {
+    margin: 18px 0;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 2px solid #d9a9b7;
+    border-radius: 12px;
+    background-color: #fff5f7;
+    color: #302b29;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #475438;
+}
+
+button {
+    background-color: #475438;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    margin: 10px 5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #35412b;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.informacion-sesion {
+    width: 90%;
+    max-width: 1100px;
+    margin: 18px auto;
+    padding: 20px;
+    background-color: #f1bbcb;
+    border: 1px solid #f8dce5;
+    border-radius: 20px;
+    text-align: center;
+    color: #475438;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.informacion-sesion h3 {
+    margin: 0 0 12px;
+    font-size: 21px;
+    font-weight: 900;
+    color: #475438;
+}
+
+.informacion-sesion p {
+    font-size: 15px;
+    font-weight: 800;
+    color: #302b29;
+    margin: 7px;
 }
 
 footer {
     text-align: center;
     padding: 25px 15px;
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 footer p {
     color: #f1bbcb;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 800;
+}
+
+@media (max-width: 750px) {
+
+    header h1 {
+        font-size: 38px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 9px 12px;
+    }
+
+    .contenedor-tarjetas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    main h2 {
+        font-size: 27px;
+    }
+
+    main h3 {
+        font-size: 22px;
+    }
+
+    .tarjeta {
+        padding: 22px;
+    }
+
+    .tarjeta table {
+        font-size: 12px;
+    }
+
+    .tarjeta th,
+    .tarjeta td {
+        padding: 8px 5px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .informacion-sesion {
+        padding: 15px 10px;
+    }
+
 }

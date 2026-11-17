@@ -1,3 +1,4 @@
+<?php include __DIR__."/includes/sesion.php";?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -15,6 +16,7 @@
 <body>
     <?php include __DIR__."/includes/header.php";?>
     <?php include __DIR__."/includes/menu.php";?>
+    <?php include __DIR__."/includes/informacion_sesion.php";?>
 
     <main>
         <h2>Estructuras condicionales</h2>
@@ -24,8 +26,8 @@
 
             <div class="tarjeta">
                 <h4>Condicional if - else</h4>
-                <p>Código implementado</p>
-                <img src="" alt="Código de ejemplo de if y else">
+                <p>Código de implementación</p>
+                <img src="/images/C1.png" alt="Código de ejemplo de if y else">
 
                 <p>La estructura if permite comprobar si una condición es verdadera para ejecutar un bloque de instrucciones. Si la condición no se cumple, se ejecuta el bloque definido por else, proporcionando una alternativa.</p>
 
@@ -58,8 +60,8 @@
 
             <div class="tarjeta">
                 <h4>Condicional if - elseif - else</h4>
-                <p>Código implementado</p>
-                <img src="" alt="Código de ejemplo de if, elseif y else">
+                <p>Código de implementación</p>
+                <img src="/images/C2.png" alt="Código de ejemplo de if, elseif y else">
 
                 <p>La estructura elseif permite evaluar condiciones adicionales cuando la condición del if anterior no se cumple. De esta manera, es posible comprobar diferentes posibilidades en orden y ejecutar el bloque de instrucciones correspondiente a la primera condición que resulte verdadera.</p>
 
@@ -96,8 +98,8 @@
 
             <div class="tarjeta">
                 <h4>Condicional switch</h4>
-                <p>Código implementado</p>
-                <img src="" alt="Código de ejemplo de switch">
+                <p>Código de implementación</p>
+                <img src="/images/C3.png" alt="Código de ejemplo de switch">
 
                 <p>La estructura switch permite comparar el valor de una expresión con diferentes opciones mediante la instrucción case. Cuando encuentra una coincidencia, ejecuta el bloque correspondiente. La instrucción break detiene la ejecución del switch y default establece una alternativa cuando no existe ninguna coincidencia.</p>
 

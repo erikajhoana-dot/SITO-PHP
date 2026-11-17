@@ -1,3 +1,4 @@
+<?php include __DIR__."/includes/sesion.php";?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -15,6 +16,7 @@
 <body>
     <?php include __DIR__."/includes/header.php";?>
     <?php include __DIR__."/includes/menu.php";?>
+    <?php include __DIR__."/includes/informacion_sesion.php";?>
 
     <?php
     $instrumentos_musicales = ["Guitarra", "Piano", "Batería", "Violín", "Saxofón"];
@@ -60,7 +62,7 @@
 
             <div class="tarjeta">
                 <h4>Arreglo indexado</h4>
-                <p>Código implementado</p>
+                <p>Código de implementación</p>
                 <img src="images/A1.png" alt="Código de ejemplo de arreglo indexado">
 
                 <p>Los arreglos indexados almacenan varios elementos dentro de una misma variable y cada elemento tiene una posición numérica que comienza desde cero.</p>
@@ -82,7 +84,7 @@
 
             <div class="tarjeta">
                 <h4>Arreglo asociativo</h4>
-                <p>Código implementado</p>
+                <p>Código de implementación</p>
                 <img src="images/A2.png" alt="Código de ejemplo de arreglo asociativo">
 
                 <p>Los arreglos asociativos almacenan información mediante claves personalizadas, las cuales permiten identificar cada valor dentro del arreglo.</p>
@@ -106,7 +108,7 @@
 
             <div class="tarjeta">
                 <h4>Arreglo multidimensional</h4>
-                <p>Código implementado</p>
+                <p>Código de implementación</p>
                 <img src="images/A3.png" alt="Código de ejemplo de arreglo multidimensional">
 
                 <p>Los arreglos multidimensionales permiten almacenar otros arreglos dentro de una misma estructura, facilitando la organización de información relacionada.</p>
@@ -128,7 +130,7 @@
                         echo "<p>Esta película dura menos de dos horas.</p>";
                     }
 
-                    echo "<hr>";
+                    echo "<br><br>";
 
                 }
                 ?>

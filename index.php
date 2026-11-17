@@ -1,3 +1,18 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION["hora_inicio"])) {
+    session_unset();
+    session_destroy();
+}
+
+include __DIR__."/includes/sesion.php";
+
+?>
+
+<?php include __DIR__."/includes/sesion.php";?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,10 +29,13 @@
 <body>
     <?php include __DIR__."/includes/header.php";?>
     <?php include __DIR__."/includes/menu.php";?>
+    <?php include __DIR__."/includes/informacion_sesion.php";?>
 
     <main>
        <h2>Bienvenido al sitio informativo sobre PHP</h2> 
        <P>Explora los fundamentos de la programación del lado del servidor con PHP.</P>
+       <br>
+       <img src="/images/php.png">
     </main>
     
     <?php include __DIR__."/includes/footer.php";?>

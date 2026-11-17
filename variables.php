@@ -1,3 +1,5 @@
+<?php include __DIR__."/includes/sesion.php";?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,6 +16,7 @@
 <body>
     <?php include __DIR__."/includes/header.php";?>
     <?php include __DIR__."/includes/menu.php";?>
+    <?php include __DIR__."/includes/informacion_sesion.php";?>
 
     <?php 
     $cadena = "Karen";

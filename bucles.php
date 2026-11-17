@@ -1,3 +1,5 @@
+<?php include __DIR__."/includes/sesion.php";?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,6 +16,7 @@
 <body>
     <?php include __DIR__."/includes/header.php";?>
     <?php include __DIR__."/includes/menu.php";?>
+    <?php include __DIR__."/includes/informacion_sesion.php";?>
 
     <?php
     $arreglo_dias_semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
@@ -58,7 +61,7 @@
 
             <div class="tarjeta">
                 <h4>Bucle for</h4>
-                <p>Código implementado</p>
+                <p>Código de implementación</p>
                 <img src="images/B1.png" alt="Código de ejemplo de for">
 
                 <p>
@@ -79,7 +82,7 @@
 
             <div class="tarjeta">
                 <h4>Bucle foreach</h4>
-                <p>Código implementado</p>
+                <p>Código de implementación</p>
                 <img src="images/B2.png" alt="Código de ejemplo de foreach">
 
                 <p>
@@ -122,7 +125,7 @@
 
             <div class="tarjeta">
                 <h4>Bucle while</h4>
-                <p>Código implementado</p>
+                <p>Código de implementación</p>
                 <img src="images/B3.png" alt="Código de ejemplo de while">
 
                 <p>
@@ -140,7 +143,7 @@
 
                     while ($posicion < count($lista_carrito_de_compras)) {
 
-                        echo $lista_carrito_de_compras[$posicion] . "<br>";
+                        echo $lista_carrito_de_compras[$posicion] . ", ";
 
                         $posicion++;
 
